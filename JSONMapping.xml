@@ -1,0 +1,58 @@
+<TextInput>
+    <SourceTypes>
+        <SourceType>
+            <!--Name of the source-->
+            <Name>psiphonTrigger</Name>
+            <!--Mode of operation-->
+            <Mode>UDP</Mode>
+            <Sources>
+                <!--listen port -->
+                <Source>0.0.0.0:3001</Source>
+            </Sources>
+            <Fields>
+                <Field>
+                    <!--A unique number that defines the field position within CSV list-->
+                    <Ordinal>1</Ordinal>
+                    <!--Whether the field is mandatory in the record. If a mandatory field is not present, the entire record is dropped-->
+                    <Mandatory>yes</Mandatory>
+                    <!--Name of the field-->
+                    <Name>ip</Name>
+                </Field>
+            </Fields>
+        </SourceType>
+        <SourceType>
+            <!--Name of the source-->
+            <Name>vpnTrigger</Name>
+            <!--Mode of operation-->
+            <Mode>UDP</Mode>
+            <Sources>
+                <!--listen port -->
+                <Source>0.0.0.0:3000</Source>
+            </Sources>
+            <Fields>
+                <Field>
+                    <!--A unique number that defines the field position within CSV list-->
+                    <Ordinal>1</Ordinal>
+                    <!--Whether the field is mandatory in the record. If a mandatory field is not present, the entire record is dropped-->
+                    <Mandatory>yes</Mandatory>
+                    <!--Name of the field-->
+                    <Name>ip</Name>
+                </Field>
+            </Fields>
+        </SourceType>
+        <SourceType>
+            <Name>ExamCenterUpdate</Name>
+            <Mode>UDP</Mode>
+            <Sources>
+                <Source>0.0.0.0:3010</Source>
+            </Sources>
+            <Fields>
+                <Field>
+                    <Ordinal>1</Ordinal>
+                    <Mandatory>yes</Mandatory>
+                    <Name>data</Name>
+                </Field>
+            </Fields>
+        </SourceType>
+    </SourceTypes>
+</TextInput>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default subscriber data view -->
+<Dataview>
+	<!-- Data view properties -->
+	<Name>Profile</Name>
+	<Keys>
+		<Key>
+			<Name>Name</Name>
+			<Type>string</Type>
+		</Key>
+	</Keys>
+	<!-- Attributes -->
+	<Attributes>
+		<!--New Attribute-->
+		<Attribute>
+			<Name>isVpnUser</Name>
+			<Type>boolean</Type>
+			<Notifiable>true</Notifiable>
+		</Attribute>
+		<Attribute>
+			<Name>isIntercepted</Name>
+			<Type>boolean</Type>
+			<Notifiable>true</Notifiable>
+		</Attribute>
+		<Attribute>
+			<Name>action</Name>
+			<Type>string</Type>
+			<Notifiable>true</Notifiable>
+		</Attribute>
+		<Attribute>
+			<Name>IsExamCenterArea</Name>
+			<Type>boolean</Type>
+			<Notifiable>true</Notifiable>
+		</Attribute>
+	</Attributes>
+</Dataview>
+
